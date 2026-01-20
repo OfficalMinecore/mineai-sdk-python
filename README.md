@@ -7,6 +7,10 @@ Powered by [http://getmineai.site/](http://getmineai.site/)
 - [Github](https://github.com/OfficalMinecore/mineai-sdk)
 - [Discord Server](https://discord.gg/fbfdwpHctb) – Join the server for Support.
 
+# Fixes:
+- Memory
+- Error Handling
+
 ### Integrations:
 
 - **Disocrd**: Go To [MineAI-Studio](https://studio.getmineai.site/) 

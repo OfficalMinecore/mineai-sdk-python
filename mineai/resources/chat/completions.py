@@ -49,6 +49,7 @@ class Completions:
         try:
             with self._client.client.stream("POST", url, headers=headers, json=data) as response:
                 if not response.is_success:
+                    response.read()
                     self._client._handle_response(response)
                 
                 for line in response.iter_lines():
@@ -101,6 +102,7 @@ class AsyncCompletions:
         try:
             async with self._client.client.stream("POST", url, headers=headers, json=data) as response:
                 if not response.is_success:
+                    await response.aread()
                     self._client._handle_response(response)
                 
                 async for line in response.aiter_lines():
